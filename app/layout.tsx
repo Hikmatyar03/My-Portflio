@@ -45,7 +45,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="preload"
@@ -76,7 +76,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           crossOrigin="anonymous"
         />
       </head>
-      <body className="bg-bg text-text antialiased">
+      <body className="bg-bg text-text antialiased" suppressHydrationWarning>
         <SmoothScroll />
         <CustomCursor />
         <Nav />
