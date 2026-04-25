@@ -1,0 +1,48 @@
+{
+  "name": "wesite",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Hikmatyar",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "nextjs",
+    "portfolio",
+    "tailwind",
+    "gsap"
+  ],
+  "author": "Hikmatyar",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^18.3.24",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@portabletext/react": "^6.0.3",
+    "@sanity/client": "^7.22.0",
+    "@sanity/image-url": "^2.1.1",
+    "@sanity/vision": "^5.22.0",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.23",
+    "next": "^14.2.35",
+    "next-sanity": "^12.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanity": "^5.22.0"
+  }
+}
