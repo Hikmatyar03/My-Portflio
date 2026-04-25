@@ -12,7 +12,7 @@ export default defineConfig({
 
   plugins: [
     structureTool({
-      structure: (S) =>
+      structure: (S: import("sanity/structure").StructureBuilder) =>
         S.list()
           .title("Content")
           .items([
