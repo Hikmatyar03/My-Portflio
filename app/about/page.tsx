@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { MagneticButton } from "@/components/MagneticButton";
+import MeImg from "@/assets/Me.png";
 
 export const metadata: Metadata = {
   title: "About"
@@ -38,7 +40,16 @@ export default function AboutPage() {
           </MagneticButton>
         </div>
 
-        <div className="min-h-[540px] bg-surface" />
+        <div className="relative min-h-[540px] overflow-hidden bg-surface">
+          <Image
+            src={MeImg}
+            alt="Hikmatyar"
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            priority
+          />
+        </div>
       </div>
     </main>
   );

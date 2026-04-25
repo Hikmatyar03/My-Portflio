@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { MagneticButton } from "@/components/MagneticButton";
 
+import Image from "next/image";
+import LogoImg from "@/assets/Logo.png";
+
 const links = [
   { href: "/work", label: "Work" },
   { href: "/about", label: "About" },
@@ -42,10 +45,10 @@ export function Nav() {
           <MagneticButton>
             <Link
               href="/"
-              className="font-display text-[18px] tracking-[-0.03em] text-text"
+              className="flex items-center"
               data-cursor="hover"
             >
-              Hikmatyar
+              <Image src={LogoImg} alt="Hikmatyar Logo" className="h-8 w-auto" priority />
             </Link>
           </MagneticButton>
 
