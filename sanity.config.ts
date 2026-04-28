@@ -21,6 +21,7 @@ export default defineConfig({
               .child(
                 S.documentList()
                   .title("Case Studies")
+                  .apiVersion("2024-01-01")
                   .filter('_type == "caseStudy"')
                   .defaultOrdering([{ field: "order", direction: "asc" }])
               )
